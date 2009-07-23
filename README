@@ -16,12 +16,12 @@ For FW hackers
   include Agnostic::Helper
 
 
-For Plugin hackers
+For Plugin providors
 ------------------
 
 * access to configuration entry
 
-  Agnostic.config{entry_name}
+  Agnostic.plugin(:plugin_name).config_entry
 
 * register a view helper
 
