@@ -1,0 +1,41 @@
+Agnostic
+========
+
+For FW hackers
+--------------
+
+* configure plugin by application developer
+
+  Agnostic.plugin :plugin_name do
+    # do configure
+    config_entry value
+  end
+
+* load helpers
+
+  include Agnostic::Helper
+
+
+For Plugin hackers
+------------------
+
+* access to configuration entry
+
+  Agnostic.config{entry_name}
+
+* register a view helper
+
+  Agnostic.helpers do
+    def your_view_helper
+    end
+  end
+
+For Application Developers
+--------------------------
+
+If your FW support agnostic, you need to do nothing.
+Otherwise, you should initialize angostic by
+
+  require "agnostic/polyglot"
+
+at your FW's configuration script (such as config/environemnt.rb).
