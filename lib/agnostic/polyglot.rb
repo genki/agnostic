@@ -1,6 +1,6 @@
 if defined?(Sinatra)
   module Sinatra
-    helpers Agnostic::Helper
+    Base.helpers Agnostic::Helper
   end
   Agnostic.modify
 end
