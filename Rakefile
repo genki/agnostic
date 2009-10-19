@@ -1,7 +1,7 @@
 require "rake/gempackagetask"
 
 GEM_NAME    = "agnostic"
-GEM_VERSION = "0.1.0"
+GEM_VERSION = "0.1.1"
 AUTHOR      = "Genki Takiuchi"
 EMAIL       = "genki@s21g.com"
 HOMEPAGE    = "http://blog.s21g.com/genki"
